@@ -1,0 +1,11 @@
+title: "数学者の感じたこと，読んだ本，聞いた音楽，見た映画"
+description: "松本 圭峰のブログ"
+url: "https://keihomatsumoto.github.io"
+baseurl: "/blog"
+lang: ja
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed

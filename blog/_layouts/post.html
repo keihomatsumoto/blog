@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article>
+  <header class="post-header">
+    <div class="post-meta">
+      <span class="post-date">{{ page.date | date: "%Y年%-m月%-d日" }}</span>
+      {% if page.tag %}
+        {% if page.tag == "本" %}<span class="post-tag tag-book">本</span>
+        {% elsif page.tag == "音楽" %}<span class="post-tag tag-music">音楽</span>
+        {% elsif page.tag == "映画" %}<span class="post-tag tag-film">映画</span>
+        {% else %}<span class="post-tag tag-diary">{{ page.tag }}</span>
+        {% endif %}
+      {% endif %}
+    </div>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
